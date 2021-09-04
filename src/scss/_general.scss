@@ -1,0 +1,53 @@
+
+/*****************
+     General
+*****************/
+
+body {
+    font-family: $font-primary;
+    font-size: $base-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-secondary;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/**BACK TO TOP**/
+
+.back-to-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: rgba($custom, 0.7);
+    transition: all 0.5s;
+    i {
+        color: $white;
+        font-size: 22px;
+        display: block;
+        line-height: 30px;
+    }
+}
+

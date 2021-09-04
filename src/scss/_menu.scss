@@ -1,0 +1,180 @@
+
+
+/******************
+    Navbar
+*******************/
+
+.navbar-custom {
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+    font-family: $font-secondary;
+    .navbar-nav {
+        li {
+            a {
+                line-height: 26px;
+                color: $white;
+                font-size: $base-font;
+                transition: all 0.5s;
+                background-color: transparent !important;
+                padding: 6px 0;
+                margin: 0 15px;
+                font-weight: 500;
+               
+                &:hover, &:active{
+                    
+                    color: $custom !important;
+                   
+                    
+                }
+            }
+
+            &.active{
+                a{
+                    color: $custom !important;
+                    
+                }
+            }
+        }
+        .nav-link {
+            padding-right: 0px;
+            padding-left: 0px;
+            &:hover, &:active{
+                    
+                display: block;
+               
+                
+            }
+
+        }        
+    }
+}
+
+
+
+
+.navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: $white;
+    &:focus{
+        outline: none;
+    }
+}
+
+.navbar-btn{
+    margin: 0 15px;
+    font-size: 12px;
+    border-color: transparent;
+    transition: all 0.5s;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover{
+        color: $white;
+    }
+}
+
+.nav{
+    .open{
+        >a, >a:focus, >a:hover{
+            background-color: transparent;
+            border-color: #337ab7;
+        }
+    }
+}
+
+
+/********** navbar sticky *********/
+
+.nav-sticky{
+    &.navbar-custom {
+        margin-top: 0px;
+        padding: 10px 0px;
+        background-color: #1b2032;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+        color: $light !important;
+        .navbar-nav {
+            margin-top: 0px;
+            li {
+                a {
+                    color: $light;
+                }
+            }
+            
+        }
+    }
+}
+
+.logo {
+    .logo-light {
+        display: inline-block;
+    }
+    .logo-dark {
+        display: none;
+    }
+}
+
+.nav-sticky {
+    .logo {
+        .logo-dark {
+            display: inline-block;
+        }
+        .logo-light {
+            display:none;
+        }
+        
+    }
+}
+
+/********* Responsive *********/
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .navbar-custom {
+        margin-top: 0px;
+        padding: 10px 0px !important;
+        background-color: #1b2032 !important;
+        box-shadow: 0 10px 33px rgba($dark, .1);
+        color: $light !important;
+        .navbar-nav {
+            margin-top: 0px;
+            li {
+                a {
+                    transition: all 0.4s;
+                    color: $light !important;
+                    margin: 0px;
+                }
+                &.active {
+                    a{
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+        >.container {
+            width: 90%;
+        }
+    }
+
+    .navbar-toggler {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: $light;
+    }
+    .navbar-btn{
+        margin: 0px;
+    }
+    .logo {
+        .logo-light {
+            display: none;
+        }
+        .logo-dark {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+
+
+/*****************
+    Components
+*****************/
+
+.btn {
+    padding: 12px 25px;
+    border: 1px solid;
+    font-size: 12px;
+    transition: all 0.5s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    box-shadow: none !important;
+}
+
+.btn-sm {
+    padding: 10px 22px;
+}
+
+.btn-round {
+    border-radius: 30px;
+}
+
+.btn-custom {
+    color: $white;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.open > .dropdown-toggle.btn-custom {
+    outline: none;
+    text-decoration: none;
+    color: $white;
+}
+
+.btn-custom-white {
+    background-color: $white;
+    border: 1px solid $white;
+    border-bottom: 3px solid darken($white, 12%);
+}
+
+.btn-custom-white:hover,
+.btn-custom-white:focus,
+.btn-custom-white:active,
+.btn-custom-white.active,
+.btn-custom-white.focus,
+.open > .dropdown-toggle.btn-custom-white {
+    outline: none;
+    background-color: darken($white, 7%);
+    border-color: darken($white, 7%);
+    border-bottom-color: darken($white, 15%);
+    color: $white;
+    text-decoration: none;
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:focus,
+.btn-outline-white:active,
+.btn-outline-white.active,
+.btn-outline-white.focus,
+.open > .dropdown-toggle.btn-outline-white {
+    background-color: $white !important;
+    outline: none;
+    text-decoration: none;
+}

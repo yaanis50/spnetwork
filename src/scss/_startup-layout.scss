@@ -1,0 +1,99 @@
+
+/******************
+    Startup Layout
+*******************/
+
+/******** startup-home ********/
+
+.bg-home-start-up{
+    background: url("../images/bg-home-startup.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 230px 0 180px 0;
+    position: relative;
+}
+
+/******** startup-about ********/
+
+.startup-about-img {
+    img{
+        border-radius: 12px;
+    }
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+/******** startup-testimonials ********/
+
+.testi-startup{
+    box-shadow: 0 10px 50px rgba(20, 50, 47, 0.03), 0 10px 40px rgba(0, 0, 0, 0.03);
+}
+
+.testi-icon {
+    i{
+        line-height: 0.6;
+    }
+}
+
+/******** startup-team ********/
+
+.startup-team-box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.startup-team-content{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0 , 0, 0.7);
+}
+
+/******** startup-pricing ********/
+
+.startup-pricing-table {
+    border-radius: 12px;
+    border: 2px solid rgba($dark, 0.04);
+    border-top: 16px solid rgba($dark, 0.04);
+}
+
+.startup-pricing-table-active {
+    border-radius: 12px;
+    border: 2px solid;
+    border-top: 16px solid;
+}
+
+/******** subscribe ********/
+
+.subscribe {
+    .form-control {
+        padding: 10px 20px;
+        border-width: 2px;
+        border-color: $white !important;
+        height: 46px;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+/********* Responsive ***********/
+
+@media (max-width: 425px) {
+    .bg-home-start-up {
+        .mouse-down {
+            a{
+                top: 35px;
+            }
+        }
+    }
+}
